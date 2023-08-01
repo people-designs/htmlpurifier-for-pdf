@@ -1,16 +1,17 @@
 <?php
 
+// override to make $browsable=true
+
 /**
  * Validates file as defined by RFC 1630 and RFC 1738.
  */
 class HTMLPurifier_URIScheme_file extends HTMLPurifier_URIScheme
 {
     /**
-     * Generally file:// URLs are not accessible from most
-     * machines, so placing them as an img src is incorrect.
+     * Since this is only used for PDF generation, we can make sure image src resolves.
      * @type bool
      */
-    public $browsable = false;
+    public $browsable = true;
 
     /**
      * Basically the *only* URI scheme for which this is true, since
