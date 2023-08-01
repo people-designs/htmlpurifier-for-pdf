@@ -1,5 +1,5 @@
 {
-    "name": "people-designs/htmlpurifier",
+    "name": "people-designs/htmlpurifier-for-pdf",
     "description": "Standards compliant HTML filter written in PHP",
     "type": "library",
     "keywords": ["html"],
