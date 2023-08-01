@@ -38,6 +38,8 @@ class HTMLPurifier_URIScheme_file extends HTMLPurifier_URIScheme
         // While it seems to work on Firefox, the querystring has
         // no possible effect and is thus stripped.
         $uri->query = null;
+        $uri->scheme = 'file';
+        $uri->path = "//{$uri->path}";
         return true;
     }
 }
