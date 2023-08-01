@@ -41,5 +41,8 @@
             "url": "https://github.com/ezyang/simpletest.git",
             "no-api": true
         }
-    ]
+    ],
+    "provide": { 
+        "ezyang/htmlpurifier": "^4.9.0"
+    }
 }
